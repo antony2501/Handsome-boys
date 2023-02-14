@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+long long snt(long long n){
+    int kt=1;
+    if(n<2){
+        kt=0;
+    }else{
+        for(long long i =2;i<=sqrt(n);i++){
+            if(n%i==0){
+                kt=0;
+                break;
+            }
+        }
+    }
+    if(kt==0)
+    return 0;
+    else
+    return 1;
+}
+int main(){
+    int testcase;
+    cin >> testcase;
+    while(testcase--){
+        long long x;
+        cin >> x;
+        
+            long long tich=1,x1=x;
+            for(long long i=2;i<=sqrt(x1);i++){
+                if(x1%i==0){
+                	if(snt(i)==1){
+                    tich=tich*i;
+                    }
+					if(snt(x1/i)==1&&(x1/i)!=i){
+                        tich = tich *(x1/i);
+                    }
+                    x1=x1/i;
+                }
+                
+            }
+            if(tich==x||tich>x||tich==1){
+                cout << "NO";
+            }
+            if(tich<x&&tich !=1){
+                cout << "YES";
+            }
+            cout << endl;
+        
+    }
+}
