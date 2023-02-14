@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int testcase;
+    cin >> testcase;
+    while(testcase--){
+        int n;
+        float x;
+        cin >> n >> x;
+        float nhan=1,tong=0;
+        for(int i=1;i<=n;i++){
+            nhan=nhan*x;
+            tong = sqrt(tong + nhan);
+          }  
+        cout << fixed << setprecision(3) << tong << endl;
+        
+    }
+}
