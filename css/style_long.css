@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     top: 50%;
     left: 50%;
@@ -26,7 +26,7 @@
   .image {
     height: 100px;
     width: 100px;
-    background-image: url('https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-6/325979931_571831168150969_3428789394853220796_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=x3ohONNR5VAAX_ijDyG&tn=cay0ADSKuG7zQhjj&_nc_ht=scontent.fhan2-5.fna&oh=00_AfCbu0FSf0twGRsg_KXfJzwxnwupF9bz73hKaqNrPFN7UA&oe=63F78BD1');
+    background-image: url(/image/long.jpg);
     background-size: cover;
     border-radius: 50%;
     border: 8px solid white;
